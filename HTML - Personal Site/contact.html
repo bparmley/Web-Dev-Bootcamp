@@ -13,16 +13,18 @@
     <p>Fictional mailing address</p>
     <p>123-456-7890 (not a real number)</p>
     <p><a href="<a href=" mailto:joe@example.com?subject=contact">not a real email address</a></p>
-
-    <form class="" action="index.html" method="post">
+    <hr>
+    <form action="mailto:joe@example.com?subject=contact" method="post" enctype="text/plain">
         <label for="name">Your Name:</label>
-        <input type="text" name="name" value=""><br>
+        <input type="text" name="name" value="" required><br>
+        <label for="email">Your Email Address:</label>
+        <input type="email" name="email" value="" required>
         <label for="color">What is your favorite color?</label>
         <input type="color" name="color" value=""><br>
         <label for="message">Send me a message:</label><br>
         <textarea name="message" rows="8" cols="80"></textarea><br>
         <label for="optin">Opt in to receive our newsletter.</label>
-        <input type="checkbox" name="optin" value=""><br><br>
+        <input type="checkbox" name="optin" value="true"><br><br>
         <input type="submit" name="submit">
     </form>
     <hr>
